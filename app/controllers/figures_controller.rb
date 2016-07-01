@@ -126,11 +126,7 @@ class FiguresController < ApplicationController
     #### End Titles ####
     @figure.save
 
-
-
     # redirect to the song's show page
     redirect "/figures/#{@figure.id}"
   end
-
-
 end

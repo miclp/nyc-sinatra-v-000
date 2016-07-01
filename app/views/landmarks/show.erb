@@ -2,9 +2,17 @@
   <tr>
     <th>Name</th>
     <th>Year Completed</th>
+    <th>
+      Figure Name
+    </th>
   </tr>
   <tr>
     <td><%= @landmark.name %></td>
     <td><%= @landmark.year_completed %></td>
+    <td>
+
+      <%= Figure.find(@landmark.figure_id).name if !@landmark.figure_id.blank? %>
+    </td>
   </tr>
 <table>
+  <a href="/landmarks/<%= @landmark.id %>/edit">Edit Landmark</a>
