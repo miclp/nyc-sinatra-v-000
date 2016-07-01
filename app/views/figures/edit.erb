@@ -4,7 +4,6 @@
 <form class="" action="/figures/<%= @figure.id %>/edit" method="post">
   <input type="hidden" name="_method" value="patch">
 
-
   <label>figure Name:</label>
 
   <input type="text" name="figure[name]" id="figure_name" value="<%= @figure.name %>">
@@ -41,8 +40,6 @@
   <label>name:</label>
     <input type="text" id="new_title" name="title[name]"></input>
   <br></br>
-
-
 
   <input type="submit" id="Edit Figure" name="update" value="Update Figure">
 </form>
